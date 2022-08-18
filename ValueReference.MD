@@ -1,4 +1,4 @@
-Pass by Value veya Pass by Reference
+Pass by Value ve Pass by Reference
 ======
 
 ## C# için "Pass by Value" ve "Pass by Reference" kavramları neler, bunların farkı ne, C#'da hangi tipler varsayılanda Reference Type hangileri Value Type araştırın.

@@ -1,7 +1,7 @@
 OBSS Araştırma Soruları
 ============
 
-## Translated Versions
-- [Pass by Value or Pass by Reference](ValueReference.md)
+## Sorular
+- [Pass by Value ve Pass by Reference](ValueReference.MD)
 
 ___
