@@ -16,7 +16,8 @@ Encapsulation, nesne içerisindeki belirli alanların dışarıdan erişimini ka
 public class Ayakkabi{
     private string marka;
 
-    // Dışarıdan direkt marka alanına erişemeyiz. marka alanındaki veriyi okuyabilmek için GetMarka metoduna ihtiyacımız var.
+    // Dışarıdan direkt marka alanına erişemeyiz. marka alanındaki veriyi okuyabilmek için 
+    // GetMarka metoduna ihtiyacımız var.
 
     public string GetMarka{
         return marka;
@@ -62,7 +63,9 @@ public abstract class MuzikAleti
     public string Aciklama { get; set; }
 
     public abstract string Cal();
-    //Abstract metodlar; gövde kodları türetilmiş sınıflar tarafından tamamlanacak olan eksik bırakılmış metodlardır. Virtual ile karıştırılmamalıdır. Çünkü virtual dediğimizde asıl fonksiyon gövdeye sahiptir ve opsiyonel olarak override edilebilir.
+    //Abstract metodlar; gövde kodları türetilmiş sınıflar tarafından tamamlanacak olan eksik 
+    // bırakılmış metodlardır. Virtual ile karıştırılmamalıdır. Çünkü virtual dediğimizde 
+    // asıl fonksiyon gövdeye sahiptir ve opsiyonel olarak override edilebilir.
 }
 
 public class Gitar : MuzikAleti
@@ -101,3 +104,6 @@ public void AtesYasak()
     }
 }
 ```
+
+**NOT** Ek olarak mentorum Kerem Bey'den öğrendiğim kadarıyla method overloading ve method overriding de bir polymorphism tipi olan static polymorphisme giriyor. Static olarak adlandırılmasının sebebi kodun derleme zamanı esnasında implementasyona karar verilmesi. Fakat static polymorphism sonradan ortaya çıkmış bir terim ve aslında özünde polymorphism'i sağlamak için gerekli değil. Örneğin Java'da operator overloading yoktur. Java'ya "polymorphismi sağlamaz bu yüzden OOP dili değildir" diyemeyiz.
+
